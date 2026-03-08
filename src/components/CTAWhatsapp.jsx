@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 function CTAWhatsapp() {
   return (
-    <section className="section">
+    <section className="section home-cta-section">
       <div className="container">
         <motion.div
           className="cta-box"

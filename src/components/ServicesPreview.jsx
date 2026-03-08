@@ -1,9 +1,9 @@
-﻿import { motion } from 'framer-motion'
-import { FiCode, FiFeather, FiSearch, FiTrendingUp } from 'react-icons/fi'
-import { FaPaintBrush, FaLayerGroup } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
+import { FiCode, FiFeather, FiTrendingUp } from 'react-icons/fi'
 import SectionTitle from './SectionTitle'
 
-const services = [
+const featuredServices = [
   {
     title: 'Web Development',
     icon: <FiCode />,
@@ -19,21 +19,6 @@ const services = [
     icon: <FiTrendingUp />,
     description: 'Growth campaigns that improve reach, trust, and leads.',
   },
-  {
-    title: 'SEO Optimization',
-    icon: <FiSearch />,
-    description: 'Search-focused strategies to improve rankings and traffic.',
-  },
-  {
-    title: 'Branding & Graphics',
-    icon: <FaPaintBrush />,
-    description: 'Cohesive brand visuals that communicate authority.',
-  },
-  {
-    title: 'SaaS Development',
-    icon: <FaLayerGroup />,
-    description: 'Product-focused SaaS development from concept to launch.',
-  },
 ]
 
 function ServicesPreview() {
@@ -43,8 +28,8 @@ function ServicesPreview() {
         <SectionTitle
           center
           eyebrow="Services"
-          title="Our Services"
-          subtitle="End-to-end digital services for businesses that want a premium online presence and real growth."
+          title="Top Services for Fast Growth"
+          subtitle="Start with our most requested offerings, then explore our full service stack."
         />
 
         <motion.div
@@ -59,7 +44,7 @@ function ServicesPreview() {
             },
           }}
         >
-          {services.map((service) => (
+          {featuredServices.map((service) => (
             <motion.article
               key={service.title}
               className="glass-card"
@@ -75,6 +60,12 @@ function ServicesPreview() {
             </motion.article>
           ))}
         </motion.div>
+
+        <div className="services-cta">
+          <Link className="btn btn-outline" to="/services">
+            View All Services
+          </Link>
+        </div>
       </div>
     </section>
   )

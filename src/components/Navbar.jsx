@@ -1,6 +1,7 @@
-﻿import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FiMenu, FiX } from 'react-icons/fi'
+import logoDarkTxt from '../assets/logo.png'
 
 const links = [
   { to: '/', label: 'Home' },
@@ -31,7 +32,7 @@ function Navbar() {
     <header className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
       <div className="container nav-inner">
         <NavLink to="/" className="logo" onClick={() => setMenuOpen(false)}>
-          Teqnoginies
+          <img src={logoDarkTxt} alt="Teqnoginies" />
         </NavLink>
 
         <nav className="nav-links desktop-only">

@@ -22,15 +22,30 @@ function ContactForm({ title = 'Let\'s Talk', subtitle = 'Tell us about your goa
       transition={{ duration: 0.5 }}
       viewport={{ once: true, amount: 0.3 }}
     >
+      <span className="contact-badge">Quick Response</span>
       <h3>{title}</h3>
       <p>{subtitle}</p>
       <form className="contact-form" onSubmit={handleSubmit}>
-        <input type="text" name="name" placeholder="Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea rows="5" name="message" placeholder="Message" required />
-        <button className="btn btn-primary" type="submit">
-          Send Message
-        </button>
+        <div className="contact-form-grid">
+          <label className="field">
+            <span>Your Name</span>
+            <input type="text" name="name" placeholder="John Doe" required />
+          </label>
+          <label className="field">
+            <span>Email Address</span>
+            <input type="email" name="email" placeholder="john@company.com" required />
+          </label>
+        </div>
+        <label className="field">
+          <span>Project Details</span>
+          <textarea rows="5" name="message" placeholder="Tell us what you want to build..." required />
+        </label>
+        <div className="contact-form-footer">
+          <button className="btn btn-primary" type="submit">
+            Send Message
+          </button>
+          <small>We usually reply within 24 hours.</small>
+        </div>
       </form>
     </motion.div>
   )

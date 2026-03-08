@@ -1,8 +1,8 @@
-﻿import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { FaWhatsapp } from 'react-icons/fa'
 
-const rotating = ['Websites', 'Marketing', 'Graphics Design']
+const rotating = ['Web Platforms', 'Performance Marketing', 'Brand Systems']
 
 function Hero() {
   const [index, setIndex] = useState(0)
@@ -32,15 +32,21 @@ function Hero() {
             },
           }}
         >
+          <motion.span
+            className="hero-eyebrow"
+            variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
+          >
+            Growth-ready digital partner
+          </motion.span>
           <motion.h1 variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}>
-            Building Powerful Digital Experiences
+            Genies to fulfill your digital needs
           </motion.h1>
           <motion.p variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}>
-            Genies to fulfill your digital needs
+            We build, launch, and scale high-performing digital products that help brands stand out and convert.
           </motion.p>
 
           <motion.div className="hero-rotating" variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}>
-            <span>We craft:</span>
+            <span>We deliver:</span>
             <AnimatePresence mode="wait">
               <motion.strong
                 key={rotating[index]}
@@ -52,6 +58,21 @@ function Hero() {
                 {rotating[index]}
               </motion.strong>
             </AnimatePresence>
+          </motion.div>
+
+          <motion.div className="hero-stats" variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}>
+            <div>
+              <strong>120+</strong>
+              <span>Projects shipped</span>
+            </div>
+            <div>
+              <strong>35%</strong>
+              <span>Avg. lead growth</span>
+            </div>
+            <div>
+              <strong>4.9/5</strong>
+              <span>Client rating</span>
+            </div>
           </motion.div>
 
           <motion.div className="hero-actions" variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}>
@@ -83,12 +104,17 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15, duration: 0.55, ease: 'easeOut' }}
         >
-          <div className="floating-chip chip-one">SaaS + Growth</div>
-          <div className="floating-chip chip-two">UI that converts</div>
-          <img
-            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1100&q=80"
-            alt="Modern digital workspace"
-          />
+          <div className="hero-panel">
+            <h3>What you get with Teqnoginies</h3>
+            <ul>
+              <li>Conversion-first website systems</li>
+              <li>Creative assets for every campaign</li>
+              <li>SEO and paid growth execution</li>
+              <li>Weekly performance tracking</li>
+            </ul>
+          </div>
+          <div className="floating-chip chip-one">Launch in weeks</div>
+          <div className="floating-chip chip-two">Strategy + Execution</div>
         </motion.div>
       </div>
     </section>
