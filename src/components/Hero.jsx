@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { FaWhatsapp } from 'react-icons/fa'
 
@@ -61,10 +61,10 @@ function Hero() {
           </motion.div>
 
           <motion.div className="hero-stats" variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}>
-            <div>
+            {/* <div>
               <strong>120+</strong>
               <span>Projects shipped</span>
-            </div>
+            </div> */}
             <div>
               <strong>35%</strong>
               <span>Avg. lead growth</span>
