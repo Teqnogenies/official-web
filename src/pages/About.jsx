@@ -1,24 +1,24 @@
 import { motion } from 'framer-motion'
 import SectionTitle from '../components/SectionTitle'
+import harshImage from '../assets/harsh.jpeg'
+import lalitaImage from '../assets/lalita.jpg'
+import priyanshuImage from '../assets/priyanshu.jpeg'
 
 const team = [
   {
     name: 'Harsh Kahanagwal',
-    role: 'Founder & Product Lead',
-    image:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80',
+    role: 'Founder & Lead Full Stack Developer',
+    image: harshImage,
   },
   {
     name: 'Lalita',
-    role: 'Creative Director',
-    image:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80',
+    role:  'Co-Founder & Lead UI/UX Designer',
+    image: lalitaImage,
   },
   {
     name: 'Priyanshu Kashyap',
-    role: 'Growth Strategist',
-    image:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80',
+    role: 'Founder & Backend / Full Stack Engineer',
+    image: priyanshuImage,
   },
 ]
 
