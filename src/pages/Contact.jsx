@@ -13,7 +13,7 @@ function Contact() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" id="contact-form">
         <div className="container contact-layout">
           <div className="contact-info">
             <SectionTitle

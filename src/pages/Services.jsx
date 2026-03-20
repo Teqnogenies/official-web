@@ -1,6 +1,7 @@
 ﻿import { motion } from 'framer-motion'
 import { FiCode, FiFeather, FiSearch, FiTrendingUp } from 'react-icons/fi'
 import { FaPaintBrush, FaLayerGroup } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import SectionTitle from '../components/SectionTitle'
 
 const serviceData = [
@@ -79,9 +80,11 @@ function Services() {
                 transition={{ duration: 0.45, ease: 'easeOut' }}
                 whileHover={{ y: -7 }}
               >
-                <div className="icon-wrap">{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
+                <Link to="/contact#contact-form" className="service-card-link">
+                  <div className="icon-wrap">{item.icon}</div>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </Link>
               </motion.article>
             ))}
           </motion.div>
