@@ -56,15 +56,15 @@ function Footer() {
           <div className="footer-bottom">
             <p>© {new Date().getFullYear()} Teqnoginies. All rights reserved.</p>
             <div className="footer-socials">
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              {/* <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                 <FaLinkedinIn />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+              </a> */}
+              <a href="https://www.instagram.com/teqnogenies.official/" target="_blank" rel="noreferrer" aria-label="Instagram">
                 <FaInstagram />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter">
+              {/* <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter">
                 <FaXTwitter />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
