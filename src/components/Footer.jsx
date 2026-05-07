@@ -10,10 +10,10 @@ function Footer() {
           <div className="footer-top-card">
             <div className="footer-brand-block">
               <Link className="footer-brand" to="/">
-                <img className="footer-brand-logo" src={logoDarkTxt} alt="Teqnoginies" />
+                <img className="footer-brand-logo" src={logoDarkTxt} alt="Teqnogenies" />
               </Link>
               <p>
-                Teqnoginies builds high-impact digital products for brands that want stronger digital presence,
+                Teqnogenies builds high-impact digital products for brands that want stronger digital presence,
                 better lead flow, and measurable growth.
               </p>
               <a className="btn btn-primary" href="https://wa.me/918851021358" target="_blank" rel="noreferrer">
@@ -54,7 +54,7 @@ function Footer() {
           </div>
 
           <div className="footer-bottom">
-            <p>© {new Date().getFullYear()} Teqnoginies. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Teqnogenies. All rights reserved.</p>
             <div className="footer-socials">
               <a href="https://www.linkedin.com/company/teqnogenies" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                 <FaLinkedinIn />

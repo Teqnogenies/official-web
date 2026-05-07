@@ -28,7 +28,7 @@ function Home() {
               </ul>
             </article>
             <ContactForm
-              title="Contact Teqnoginies"
+              title="Contact Teqnogenies"
               subtitle="Share your digital goals and we will get back to you quickly."
             />
           </div>

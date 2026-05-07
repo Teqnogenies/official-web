@@ -17,7 +17,7 @@ function AboutPreview() {
           <SectionTitle
             eyebrow="About"
             title="Built for brands that want measurable growth"
-            subtitle="Teqnoginies blends product thinking, performance marketing, and creative design to build digital experiences that drive real business outcomes."
+            subtitle="Teqnogenies blends product thinking, performance marketing, and creative design to build digital experiences that drive real business outcomes."
           />
           <div className="about-checks">
             {highlights.map((item) => (

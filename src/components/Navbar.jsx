@@ -41,7 +41,7 @@ function Navbar() {
     <header className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
       <div className="container nav-inner">
         <NavLink to="/" className="logo" onClick={() => setMenuOpen(false)}>
-          <img src={logoDarkTxt} alt="Teqnoginies" />
+          <img src={logoDarkTxt} alt="Teqnogenies" />
         </NavLink>
 
         <nav className="nav-links desktop-only">
@@ -88,7 +88,7 @@ function Navbar() {
           </button>
           <div className="mobile-menu-intro">
             <p>Navigate</p>
-            <span>Teqnoginies digital studio</span>
+            <span>Teqnogenies digital studio</span>
           </div>
           <nav className="mobile-menu-links">
             {links.map((link) => (

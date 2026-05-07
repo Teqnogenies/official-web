@@ -27,7 +27,7 @@ function About() {
     <>
       <section className="page-hero">
         <div className="container">
-          <h1>About Teqnoginies</h1>
+          <h1>About Teqnogenies</h1>
           <p>Genies to fulfill your digital needs.</p>
         </div>
       </section>
@@ -45,7 +45,7 @@ function About() {
             >
               <h3>Company Story</h3>
               <p>
-                Teqnoginies started with a simple goal: help businesses launch premium digital experiences without agency complexity.
+                Teqnogenies started with a simple goal: help businesses launch premium digital experiences without agency complexity.
               </p>
             </motion.article>
             <motion.article

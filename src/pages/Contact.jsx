@@ -8,7 +8,7 @@ function Contact() {
     <>
       <section className="page-hero">
         <div className="container">
-          <h1>Contact Teqnoginies</h1>
+          <h1>Contact Teqnogenies</h1>
           <p>Let us discuss your next digital project.</p>
         </div>
       </section>
@@ -54,7 +54,7 @@ function Contact() {
           <SectionTitle center eyebrow="Location" title="Find us on map" />
           <div className="map-box">
             <iframe
-              title="Teqnoginies location"
+              title="Teqnogenies location"
               src="https://www.google.com/maps?q=Rajouri+Garden+Delhi+India&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

@@ -105,7 +105,7 @@ function Hero() {
           transition={{ delay: 0.15, duration: 0.55, ease: 'easeOut' }}
         >
           <div className="hero-panel">
-            <h3>What you get with Teqnoginies</h3>
+            <h3>What you get with Teqnogenies</h3>
             <ul>
               <li>Conversion-first website systems</li>
               <li>Creative assets for every campaign</li>
